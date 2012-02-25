@@ -17,8 +17,9 @@ class Loader
         
         // Strip the 'pForms' namespace out of the class and include it.
         $stripedName = substr($className, $len) . '.php';
-        $stripedName = str_replace('\\', '/', $stripedName);
+        $stripedName = __DIR__ . '/' . str_replace('\\', '/', $stripedName);
         
+        var_dump($stripedName);
         if (!file_exists($stripedName))
         {
             return;
