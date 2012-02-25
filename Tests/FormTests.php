@@ -5,9 +5,9 @@ use pUnit\Assert as Assert;
 class FormTests
 {
     
-    public function One_Should_Equal_To_Zero()
+    public function Add_Should_Return_FormElement()
     {
-        Assert::AreEqual(1,0);    
+        $form = new pForms\Form(null, null);
     }
     
 }
