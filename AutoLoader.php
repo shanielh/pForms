@@ -4,7 +4,12 @@ namespace pForms;
 
 class Loader
 {
+    
+    private function __construct()
+    {
         
+    }
+    
     public static function TryLoad($className)
     {
         $namespace = __NAMESPACE__;
